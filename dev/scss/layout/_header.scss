@@ -1,0 +1,32 @@
+//Layout is a huge parts of our page that we can visual separate from our design. And then it will contain our modules. 
+//So, here I recomend to write styles for blocks such as: header, content, wrapper, section, footer, nav etc.
+
+
+.header{
+	position: relative;
+	background-image: url('../img/header-background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width: 100%;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $hover-gradient;
+	}
+}
+.header-box{
+	position: relative;
+	padding-top: 28px;
+	margin-bottom: 163px; 
+}
+.logo{
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 30px;
+	font-weight: bold;
+	display: inline-block;
+}

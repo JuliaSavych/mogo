@@ -1,0 +1,34 @@
+-
+	var menu = [
+		{
+			title : 'about',
+			href : 'index.html'
+		},
+		{
+			title : 'service',
+			href : '#'
+		},
+		{
+			title : 'work',
+			href : 'news.html'
+		},
+		{
+			title : 'blog',
+			href : '#'
+		},
+		{
+			title : 'contact',
+			href : '#'
+		}
+	];
+nav.navigation
+	each item in menu
+		a(href=item.href)=item.title
+	i
+		.fas.fa-shopping-cart
+	.search-box(data-close-missclick)
+		.search-icon
+		.search-box__form
+			form
+				input(type="text")
+				button.search-icon
