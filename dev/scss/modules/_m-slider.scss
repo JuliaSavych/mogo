@@ -1,12 +1,25 @@
-.slider{
+.slidero{
 	text-align: center;
 	position: relative;
 }
 
-.slider-nav{
-	display: block;
+.slidero-nav{
 	margin-top: 155px;
+	cursor: pointer;
+	.slide{
+		outline: none;
+		margin-right: 28px;
+		&:nth-child(last){
+			margin-left: 0;
+		}
+	}
 }
+.slick-track{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
 button.learn-more{
 	background: none;
 	box-shadow: inset 0 0 0 3px #fff;
@@ -15,14 +28,12 @@ button.learn-more{
 	border: none;
 	cursor: pointer;
 	margin-top: 48px;
-	a{
-		display: block;
-		text-transform: uppercase;
-		font-family: $base-font;
-		font-size: 14px;
-		font-weight: bold;
-		color: #fff;
-	}
+	text-transform: uppercase;
+	font-family: $base-font-family;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
 	&:hover{
 		background: $hover-gradient;
 	}
@@ -47,22 +58,24 @@ button.learn-more{
 }
 
 .info{
+	position: relative;
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
 	padding-top: 30px;
+	font-weight: 400;
+	font-family: $base-font-family;
 	&:before{
 		content: '';
-		width: 273px;
+		width: 100%;
 		height: 5px;
 		background: $main-bg;
 		position: absolute;
 		top: 0;
 	}
 	span{
-		font-family: "Montserrat - Bold";
 		font-size: 24px;
-		font-weight: bold;
+		font-weight: 700;
 
 	}
 }

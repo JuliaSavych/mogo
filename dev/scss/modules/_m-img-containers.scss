@@ -1,0 +1,41 @@
+.img-placeholder{
+	display: inline-flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-align: center;
+	margin-right: 28px;
+	position: relative;
+	background: $bg-color-gren;
+	z-index: 1;
+	&:last-child{
+		margin-right: 0;
+	}
+	&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			max-width: 100%;
+			background: $hover-gradient;
+			opacity: 0;
+	}
+	&:hover{
+		&:after{
+    		transform: translateY(-10px) translateX(-10px);
+    		opacity: 1;
+    	}
+    	img{
+			transform: translateY(-10px) translateX(-10px);
+		}
+	}
+	&.img-placeholder-382x252{
+		height: 252px;
+		width: 382px;
+	}
+	img{
+		max-width: 100%;
+	}
+}

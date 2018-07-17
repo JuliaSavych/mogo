@@ -1,0 +1,28 @@
+.statistic-placeholder{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex: 1 auto;
+}
+.statistic{
+	display: block;
+	border-right: 4px solid rgba(255, 255, 255, 0.3);
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: $base-font-family;
+	padding: 90px 0;
+	width: 100%;
+	&:first-child{
+		border-left: 4px solid rgba(255, 255, 255, 0.3);
+	}
+}
+.statistic-number{
+	font-size: 72px;
+	font-weight: 700;
+
+}
+.statistic-name{
+	font-size: 14px;
+	font-weight: 400;
+}

@@ -21,14 +21,18 @@
 			href : '#'
 		}
 	];
-nav.navigation
-	each item in menu
-		a(href=item.href)=item.title
+.header__navbar
+	nav.navigation 
+		ul#menu
+			each item in menu
+				li: a(href=item.href)=item.title
+		.navigation-holder
+			i
+				.fas.fa-bars
 	i
 		.fas.fa-shopping-cart
 	.search-box(data-close-missclick)
-		.search-icon
-		.search-box__form
-			form
-				input(type="text")
-				button.search-icon
+		form
+			input(type="text" name="search" placeholder="search...")
+			button.fas.fa-search
+		button.fas.fa-search

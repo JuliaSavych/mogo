@@ -1,0 +1,14 @@
+.logos-wrap{
+	background: $grey-bg;
+}
+
+.logos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 52px 0;
+	cursor: pointer;
+	img{
+		max-width: 100%;
+	}
+}

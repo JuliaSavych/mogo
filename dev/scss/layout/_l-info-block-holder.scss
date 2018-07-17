@@ -2,13 +2,14 @@
 //So, here I recomend to write styles for blocks such as: header, content, wrapper, section, footer, nav etc.
 
 
-.header{
+.info-block-holder {
 	position: relative;
-	background-image: url('../img/header-background.png');
+	background-image: url('../img/header-background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-width: 100%;
-	&:before{
+	background-attachment: fixed;
+	&:before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -18,15 +19,17 @@
 		background: $hover-gradient;
 	}
 }
-.header-box{
+
+.header {
 	position: relative;
 	padding-top: 28px;
-	margin-bottom: 163px; 
-}
-.logo{
-	color: #ffffff;
-	font-family: Montserrat;
-	font-size: 30px;
-	font-weight: bold;
-	display: inline-block;
+	margin-bottom: 163px;
+	display: flex;
+	justify-content: space-between;
+	&__logo {
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 30px;
+		font-weight: bold;
+	}
 }

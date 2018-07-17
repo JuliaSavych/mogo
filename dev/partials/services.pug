@@ -1,0 +1,42 @@
+-
+	var service = [
+		{	
+			img : "/img/slider-about.png",
+			title : 'Photography',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "/img/slider-about.png",
+			title : 'Web Design',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "/img/slider-about.png",
+			title : 'Creativity',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "/img/slider-about.png",
+			title : 'seo',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "/img/slider-about.png",
+			title : 'Css/Html',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "/img/slider-about.png",
+			title : 'digital',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		}];
+.wrapper
+	.services-wrap
+		h3.subheading_italic We work with
+		h2.subheading Amazing Services
+		.services
+			each item in service
+				.service-box
+					img(src=item.img)
+					.service-box__title=item.title
+					.service-box__text=item.text
