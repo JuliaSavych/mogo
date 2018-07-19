@@ -1,26 +1,39 @@
-.slidero{
+.slider {
 	text-align: center;
 	position: relative;
+	margin-bottom: 155px;
 }
 
-.slidero-nav{
-	margin-top: 155px;
+.slider-nav {
 	cursor: pointer;
-	.slide{
+	.slide {
 		outline: none;
 		margin-right: 28px;
-		&:nth-child(last){
+		&:nth-child(last) {
 			margin-left: 0;
 		}
 	}
 }
-.slick-track{
+
+.slick-current {
+	.info{
+		&:after{
+			opacity: 1;
+			width: 100%;
+			transition: 4s ease all;
+			z-index: 2;
+		}
+	}
+}
+
+.slick-track {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
+	margin-bottom: 25px;
 }
 
-button.learn-more{
+button.learn-more {
 	background: none;
 	box-shadow: inset 0 0 0 3px #fff;
 	width: 162px;
@@ -34,12 +47,12 @@ button.learn-more{
 	font-weight: bold;
 	color: #fff;
 	outline: none;
-	&:hover{
+	&:hover {
 		background: $hover-gradient;
 	}
 }
 
-.learn-more__text{
+.learn-more__text {
 		display: none;
 		color: $text;
 		font-size: 25px;
@@ -47,7 +60,7 @@ button.learn-more{
 		line-height: 24px;
 		text-align: center;
 		padding-top: 70px;
-		&.active{
+		&.active {
 			display: block;
 			color: $text;
 			font-size: 25px;
@@ -57,7 +70,7 @@ button.learn-more{
 		}
 }
 
-.info{
+.info {
 	position: relative;
 	font-size: 18px;
 	color: #ffffff;
@@ -65,7 +78,7 @@ button.learn-more{
 	padding-top: 30px;
 	font-weight: 400;
 	font-family: $base-font-family;
-	&:before{
+	&:before {
 		content: '';
 		width: 100%;
 		height: 5px;
@@ -73,7 +86,17 @@ button.learn-more{
 		position: absolute;
 		top: 0;
 	}
-	span{
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 0;
+		height: 5px;
+		background: $horizontal-bar;
+		opacity: 0;
+		left: 0;
+	}
+	span {
 		font-size: 24px;
 		font-weight: 700;
 

@@ -1,16 +1,9 @@
-.wrapper{
-	@include breakpoint(md){
+.wrapper {
+	@include breakpoint(md) {
 		position: relative;
 		max-width: 1200px;
 		margin: 0 auto;
 	}
 	padding: 0 20px;
 	margin: 0 auto;
-}
-.clear-fix{
-	&:before{
- 		content: '';
- 		display: block;
- 		clear: both;
- 	}
 }

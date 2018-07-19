@@ -1,4 +1,4 @@
-.img-placeholder{
+.img-placeholder {
 	display: inline-flex;
 	justify-content: space-between;
 	flex-direction: row;
@@ -8,10 +8,10 @@
 	position: relative;
 	background: $bg-color-gren;
 	z-index: 1;
-	&:last-child{
+	&:last-child {
 		margin-right: 0;
 	}
-	&:after{
+	&:after {
 			content: '';
 			position: absolute;
 			top: 0;
@@ -22,20 +22,43 @@
 			background: $hover-gradient;
 			opacity: 0;
 	}
-	&:hover{
-		&:after{
+	&:hover {
+		&:after {
     		transform: translateY(-10px) translateX(-10px);
     		opacity: 1;
+    		transition: .5s ease all;
     	}
-    	img{
+    	img {
 			transform: translateY(-10px) translateX(-10px);
+			transition: .5s ease all;
+		}
+		.icon-holder {
+			opacity: 1;
+			transform: translateY(-10px) translateX(-10px);
+			z-index: 3;
+			transition: .5s ease all;
 		}
 	}
-	&.img-placeholder-382x252{
+	&.img-placeholder-382x252 {
 		height: 252px;
 		width: 382px;
 	}
-	img{
+	img {
 		max-width: 100%;
+	}
+}
+
+.icon-holder {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	&__text {
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 700;
 	}
 }

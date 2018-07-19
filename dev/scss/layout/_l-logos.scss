@@ -1,14 +1,14 @@
-.logos-wrap{
+.logos-wrap {
 	background: $grey-bg;
 }
 
-.logos{
+.logos {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 52px 0;
 	cursor: pointer;
-	img{
+	img {
 		max-width: 100%;
 	}
 }

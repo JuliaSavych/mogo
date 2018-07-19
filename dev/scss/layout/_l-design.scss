@@ -1,0 +1,17 @@
+.design-wrap {
+	background-image: url('../img/design-background.jpg');
+	background-color: #333;
+	background-attachment: fixed;
+	// opacity: 0.5;
+	padding-top: 110px;
+	position: relative;
+	height: 862px;
+	display: flex;
+	justify-content: center;
+}
+
+.design {
+	position: relative;
+	opacity: 1;
+}
+

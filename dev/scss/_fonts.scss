@@ -1,28 +1,34 @@
 //In fonts.less I import all fontfaces that will be used in website.
 
-.fa-shopping-cart{
+.fa-shopping-cart {
 	color: #fff;
 	margin-right: 40px;
 	cursor: pointer;
 	font-size: 20px;
 }
 
-.fa-bars{
+.fa-bars {
 	color: #fff;
 	cursor: pointer;
 	font-size: 30px;
 }
 
-.fa-times{
+.fa-times {
 	display: none;
-	&.active{
+	&.active {
 		display: block;
 	}
 }
 
-.fa-search{
+.fa-search {
 	color: #fff;
 	position: relative;
 	z-index: 2;
 	background: none;
+}
+
+.fa-users {
+	width: 35px;
+	height: 26px;
+	color: #fff;
 }
