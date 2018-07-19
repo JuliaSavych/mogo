@@ -34,9 +34,9 @@ gulp.task('img', function(){
 	gulp.src('./dev/img/*')
 	.pipe(gulp.dest('./app/img'))
 })
-gulp.task('icons', function(){
-	gulp.src('./dev/icons/*')
-	.pipe(gulp.dest('./app/icons'))
+gulp.task('svg', function(){
+	gulp.src('./dev/svg/*')
+	.pipe(gulp.dest('./app/svg'))
 })
 
 gulp.task('js', function(){
@@ -59,4 +59,4 @@ gulp.task('css', function(){
   .pipe(postcss())
   .pipe(gulp.dest('./app/css/'))
 })
-gulp.task('default', ['html', 'watch', 'css', 'webserver', 'js', 'scss', 'img'])
+gulp.task('default', ['html', 'watch', 'css', 'webserver', 'js', 'scss', 'img', 'svg'])

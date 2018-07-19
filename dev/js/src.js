@@ -3,6 +3,7 @@
   slidesToScroll: 1,
   arrows: false,
   dots: false,
+  asNavFor: '.slider-nav',
 });
 
 $('.slider-nav').slick({
@@ -18,11 +19,23 @@ $('.slider-nav').slick({
   mobileFirst: true,
     responsive: [
           {
+            breakpoint: 320,
+            settings: 
+              { 
+                slidesToShow: 1,
+                slidesToScroll: 4,
+                centerMode: true,
+                arrows: false
+              }
+          },
+          {
             breakpoint: 768,
             settings: 
               { 
                 slidesToShow: 4,
-                slidesToScroll: 4
+                slidesToScroll: 4,
+                centerMode: true,
+                arrows: false
               }
           }
     ]
@@ -33,16 +46,18 @@ $('.navigation-holder').on('click', function(){
   $('ul#menu').toggleClass('active');
 })
 
-$('.fas.fa-search').on('click', function(){
-  $(this).parent().toggleClass('active')
-  $(this).parent().find('input').focus();
+$('.search-box>button').on('click', function(){
+  $('.search-box').addClass('active');
 })
 
-$(document).on('click', function(e){
-  if(!$(e.target).parent('[data-close-missclick]').length){
-   $('[data-close-missclick]').removeClass('active')
-  }
-})
+$(document).mouseup(function(e) 
+{
+  var container = $('.search-box');
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+      $('.search-box').removeClass('active')
+    }
+});
 
 $(function(){
   $('button.learn-more').click(function(event){ 

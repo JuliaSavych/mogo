@@ -46,7 +46,7 @@ h2, .subheading {
 	}
 	&_slider {
 		color: #fff;
-		font-size: 80px;
+		font-size: 70px;
 		padding-bottom: 70px;
 		line-height: 140px;
 		position: relative;
@@ -58,14 +58,14 @@ h2, .subheading {
 	}
 }
 
-@media (min-width: 885px){
-	.subheading_slider{
+@media (min-width: 885px) {
+	h2.subheading_slider {
 		font-size: 150px;
 	}
 }
 
-@media (min-width: 320px){
-	.subheading_slider{
+@media (max-width: 480px) {
+	h2.subheading_slider {
 		font-size: 50px;
 	}
 }

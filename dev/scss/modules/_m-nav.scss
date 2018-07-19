@@ -33,6 +33,7 @@
 			position: fixed;
 			top: 65px;
 			left: 100%;
+			z-index: 10;
 		}
 	}
 }
@@ -92,34 +93,45 @@
 }
 
 .search-box {
+	transition: .5s ease all;
 	position: relative;
-	width: 20px;
+	width: 17px;
 	overflow: hidden;
-	&>button.fas.fa-search {
+	button{
+		background: none;
+		border: none;
+  	}
+	&>button {
 		position: absolute;
 		right: 0;
 		top: 0;
-		border: none;
-		background: inherit;
-		z-index: 20;
+		left: 0;
+		bottom: 0;
 		cursor: pointer;
 	}
 	form {
     	white-space: nowrap;
+    	// direction: rtl;
     	&>*{
     		display: inline-block;
     	}
+    	input{
+    		border-radius: 5px;
+    	}
+    	&>button{
+    		opacity: 0;
+    	}
   	}
   	&.active {
-  		form {
-  			width: 200px;
-  			&>button.fas.fa-search{
-  				display: none;
-  			}
-  			input {
-  				width: 190px;
-  			}
-  		}
+		width: 200px;
+		&>button{
+			display: none;
+		}
+		form{
+			&>button{
+				opacity: 1;
+			}
+		}
   	}
 }
 

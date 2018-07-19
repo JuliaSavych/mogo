@@ -100,3 +100,45 @@
 		}
 	}
 }
+@media (max-width: 768px){
+	.sliderabout{
+		&__img {
+			border: 1px solid $bg-color-gren;
+			cursor: pointer;
+			display: block;
+			margin: 0;
+			img {
+				padding:22px;
+			}
+		}
+		&__text {
+			font-size: 14px;
+			font-weight: 400;
+			color: #999999;
+		}
+		&__author {
+			font-family: "Kaushan Script";
+			color: #333333;
+			font-size: 14px;
+			font-weight: 400;
+			position: relative;
+			padding-left: 40px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				background: $horizontal-bar;
+				width: 31px;
+				height: 3px;
+			}
+		}
+	}
+	.slideabout{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		padding: 30px 0;
+	}
+}
