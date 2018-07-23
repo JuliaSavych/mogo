@@ -1,0 +1,26 @@
+.work {
+	padding-top: 110px;
+	text-align: center;
+}
+
+.work-img{
+	display: flex;
+	flex-wrap: wrap;
+	height: 780px;
+	flex: 1 auto;
+	align-items: stretch;
+	overflow: hidden;
+}
+
+.column {
+    flex: 25%;
+	max-width: 25%;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+
+	}
+}

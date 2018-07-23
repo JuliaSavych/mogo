@@ -1,0 +1,39 @@
+-
+	var people = [
+			{	
+				img: "/img/team-1.jpg",
+				name: "Matthew Dix",
+				job: "Graphic Design"
+			},
+			{	
+				img: "/img/team-2.jpg",	
+				name: "Christopher Campbell",
+				job: "Branding/UX design"
+			},
+			{		
+				img: "/img/team-3.jpg",
+				name: "Michael Fertig",
+				job: "Developer"
+			}
+		];
+.wrapper
+	.team-wrap
+		h3.subheading-italic 
+			|Who we are
+		h2.subheading
+			|Meet our team
+		.intro
+			|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.team
+			each item in people
+				.team-people
+					.img-placeholder.img-placeholder__team
+						img(src=item.img)
+						.icon-team
+							.fab.fa-facebook-f
+							.fab.fa-twitter
+							.fab.fa-pinterest-p
+							.fab.fa-instagram
+					.team__name=item.name
+					.team__job=item.job
+					

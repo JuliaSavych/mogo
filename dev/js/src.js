@@ -25,7 +25,8 @@ $('.slider-nav').slick({
                 slidesToShow: 1,
                 slidesToScroll: 4,
                 centerMode: true,
-                arrows: false
+                arrows: false,
+                centerPadding: '60px'
               }
           },
           {
@@ -44,11 +45,15 @@ $('.slider-nav').slick({
 $('.navigation-holder').on('click', function(){
   $(this).find('.fa-bars').toggleClass('fa-times');
   $('ul#menu').toggleClass('active');
-})
+});
 
 $('.search-box>button').on('click', function(){
   $('.search-box').addClass('active');
-})
+});
+
+$('#map>button').on('click', function(){
+  $('#map').addClass('active');
+});
 
 $(document).mouseup(function(e) 
 {

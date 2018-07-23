@@ -10,3 +10,31 @@
 	flex-basis: 33.33%;
 	flex-wrap: nowrap;
 }
+
+@media(min-width: 320px) {
+	.story-img {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 468px) {
+	.story-img {
+		display: flex;
+		justify-content: center;
+		flex-basis: 50%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 768px) {
+	.story-img {
+		display: flex;
+		justify-content: space-between;
+		flex-basis: 33.33%;
+		flex-wrap: nowrap;
+	}
+}

@@ -32,3 +32,33 @@
 	height: 26px;
 	color: #fff;
 }
+
+.fa-facebook-f, .fa-twitter, .fa-pinterest-p, .fa-instagram {
+	width: 57px;
+	height: 57px;
+	color: #f38181;
+	background: #fce38a;
+	padding-top: 17px;
+	font-size: 21px;
+	cursor: pointer;
+	border-right: 1px solid #f38181;
+	&:hover{
+		color: #fce38a;
+		background: #f38181;
+	}
+}
+
+.fa-instagram {
+	border: none;
+}
+
+.fa-map-marker-alt {
+	color: #f38181;
+}
+
+@media(max-width: 768px){
+	.fa-shopping-cart{
+		margin-bottom: 15px;
+		margin-right: 0;
+	}
+}

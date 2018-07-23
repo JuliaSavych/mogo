@@ -21,6 +21,7 @@
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 36px;
+		font-family: "Roboto - Light Italic";
 		color: #999999;
 	}
 	&__author {
@@ -39,6 +40,9 @@
 			width: 62px;
 			height: 3px;
 		}
+	}
+	&__icon{
+		margin-right: 31px;
 	}
 }
 
@@ -140,5 +144,6 @@
 		flex-direction: column;
 		text-align: center;
 		padding: 30px 0;
+		overflow: hidden;
 	}
 }

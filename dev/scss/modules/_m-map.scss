@@ -1,0 +1,52 @@
+.map-wrap {
+	position: relative;
+	text-align: center;
+}
+
+#map {
+	height: 200px;
+	position: relative;
+	filter: grayscale(1);
+	opacity: 0.3;
+	&.active{
+		height: 500px;
+		opacity: 1; 
+	}
+}
+
+.icon-map {
+	position: absolute;
+	top:30%;
+	left: 50%;
+	bottom: 0;
+	right: 0;
+	width: 20px;
+	height: 26px;
+	margin-bottom: 18px;
+}
+
+button.open-map {
+	position: absolute;
+	top: 40%;
+	left: 44%;
+	color: #f38181;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+	padding-bottom: 21px;
+	font-family: $base-font-family;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	&:after {
+		content: '';
+		position: absolute;
+		right: 50%;
+		bottom: 0;
+		transform: translateX(50%);
+		background: $horizontal-bar;
+		width: 60px;
+		height: 3px;
+	}
+}

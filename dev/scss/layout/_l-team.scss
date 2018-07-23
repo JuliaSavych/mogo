@@ -1,0 +1,49 @@
+.team-wrap{
+	padding-top: 110px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.team {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	&__name {
+		font-size: 14px;
+		font-family: $base-font-family;
+		color: rgb(51,51,51);
+		line-height: 24px;
+	}
+	&__job{
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 300;
+		font-style: italic;
+		font-family: "Roboto";
+		color: rgb(153,153,153);
+	}
+}
+
+.team-people {
+	position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+	.team {
+		display: flex;
+		flex-basis: 45%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 768px) {
+	.team {
+		display: flex;
+		justify-content: center;
+		flex-basis: 33.33%;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+}
