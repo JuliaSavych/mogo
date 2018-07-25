@@ -1,10 +1,14 @@
 .statistic-placeholder {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-direction: row;
+	flex-wrap: wrap;
+	&>[class*="col-"]{
+		padding: 0;
+	}
 }
 
-.statistic{
+.statistic {
 	display: block;
 	border-right: 1px solid rgba(255, 255, 255, 0.3);
 	text-align: center;
@@ -13,38 +17,18 @@
 	font-family: $base-font-family;
 	padding: 90px 0;
 	width: 100%;
+	cursor: pointer;
 	&:first-child {
 		border-left: 1px solid rgba(255, 255, 255, 0.3);
 	}
 }
 
-.statistic-number {
+.statistic__number {
 	font-size: 72px;
 	font-weight: 700;
 }
 
-.statistic-name {
+.statistic__name {
 	font-size: 14px;
 	font-weight: 400;
-}
-
-@media(max-width: 470px){
-	.statistic-placeholder {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-	}
-	.statistic {
-		padding: 30px 0;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-	}
-	.statistic-number {
-		font-size: 36px;
-		font-weight: 700;
-	}
-
-	.statistic-name {
-		font-size: 14px;
-		font-weight: 400;
-	}
 }

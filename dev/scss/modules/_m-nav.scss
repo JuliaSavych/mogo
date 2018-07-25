@@ -1,10 +1,12 @@
 .header__navbar {
 	display: flex;
-	flex-direction: column;
-	text-align: right;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .navigation {
+	margin-right: 15px;
 	ul#menu {
 		display: flex;
 		flex-direction: column;
@@ -22,6 +24,7 @@
 			width: 100%;
 			box-shadow: inset 0 0 0 1px $grey-bg;
 			padding: 15px;
+			margin-right: 5px;
 			a {
 				text-align: center;
 				display: block;
@@ -42,10 +45,9 @@
 
 .navigation-holder {
 	display: block;
-	margin-bottom: 15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 	.header__navbar {
 		display: flex;
 		align-items: center;
@@ -56,6 +58,7 @@
 		}
 	}
 	.navigation {
+		margin-right: 0;
 		ul#menu {
 			display:block;
 			position: relative;
@@ -63,7 +66,7 @@
 			left: 100%;
 			background: none;
 			li {
-				margin-right: 50px;
+				margin-right: 25px;
 				display: inline-block;
 				box-shadow: none;
 				padding: 0;
@@ -74,16 +77,22 @@
 					position: relative;
 					width: 100%;
 					font-size: 14px;
+					&:after{
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						background: #fce38a;
+						height: 4px;
+						opacity: 0;
+					}
 					&:hover{
 						color: #fce38a;
+						transition: 1s ease all;
 						&:after{
-							content: '';
-							position: absolute;
-							bottom: 0;
-							left: 0;
-							right: 0;
-							background: #fce38a;
-							height: 4px;
+							opacity: 1;
+							transition: 1s ease all;
 						}
 					}
 				}
@@ -95,14 +104,25 @@
 	}
 }
 
+@media (min-width: 950px ) {
+	.navigation {
+		ul#menu {
+			li {
+				margin-right: 50px;
+			}
+		}
+	}
+}
+
 .search-box {
 	transition: .5s ease all;
 	position: relative;
-	width: 17px;
+	width: 15px;
 	overflow: hidden;
 	button{
 		background: none;
 		border: none;
+		cursor: pointer;
   	}
 	&>button {
 		position: absolute;
@@ -114,26 +134,40 @@
 	}
 	form {
     	white-space: nowrap;
-    	// direction: rtl;
     	&>*{
     		display: inline-block;
     	}
     	input{
     		border-radius: 5px;
+    		padding: 0 10px;
+    		width: 150px;
+    		border: none;
+    		outline: none;
     	}
     	&>button{
     		opacity: 0;
-    	}
+		}
   	}
   	&.active {
 		width: 200px;
+	    border-radius: 15px;
+	    border: 1px solid #f8f8f8;
+	    padding: 5px;
+	    animation-name: change-color;
+		animation-duration: 5s;
 		&>button{
 			display: none;
 		}
 		form{
 			&>button{
 				opacity: 1;
+				border-radius: 50%;
+				width: 30px;
+				height: 17px;
 			}
+		}
+		@media (min-width: 950px) {
+			width: 200px;
 		}
   	}
 }

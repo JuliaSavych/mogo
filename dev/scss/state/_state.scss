@@ -1,2 +1,6 @@
-//модифікатори в бем
-
+@keyframes change-color {
+    0%   {background-color: #fce38ae6;}
+    25%  {background-color: #ecb587;}
+    50%  {background-color: #e88e83;}
+    100% {background-color: #e88182;}
+}

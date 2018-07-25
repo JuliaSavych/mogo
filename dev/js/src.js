@@ -1,3 +1,14 @@
+$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 945) {
+         $('.header').addClass('header-background')
+      }
+      if ($(this).scrollTop() < 945) {
+         $('.header').removeClass('header-background')
+      }
+   });
+});
+
  $('.slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -129,4 +140,9 @@ sliders.forEach(function(sliderabout){
   }
   sliderabout.appendChild(prevBtn) 
   
-})
+});
+
+$('.work-img').masonry({
+  itemSelector: '.img-placeholder',
+  columnWidth: '.img-placeholder__work'
+});

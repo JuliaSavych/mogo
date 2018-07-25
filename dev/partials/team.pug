@@ -24,16 +24,18 @@
 			|Meet our team
 		.intro
 			|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		.team
+		.team.row
 			each item in people
-				.team-people
-					.img-placeholder.img-placeholder__team
-						img(src=item.img)
-						.icon-team
-							.fab.fa-facebook-f
-							.fab.fa-twitter
-							.fab.fa-pinterest-p
-							.fab.fa-instagram
-					.team__name=item.name
-					.team__job=item.job
+				.col-mobile.col-phablet-1-2.col-desktop-1-3
+					figure.team-people
+						.img-placeholder.img-placeholder__team
+							img(src=item.img)
+							.icon-team
+								.fab.fa-facebook-f
+								.fab.fa-twitter
+								.fab.fa-pinterest-p
+								.fab.fa-instagram
+						figurecaption
+							.team__name=item.name
+							.team__job=item.job
 					

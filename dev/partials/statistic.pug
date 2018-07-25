@@ -1,10 +1,32 @@
 -
-	var statistica = ['Web Design Projects', 'happy client', 'award winner', 'cup of coffee', 'cup of coffee'];
+	var statistica = [
+						{	
+							number : '42',
+							name : 'Web Design Projects'
+						},
+						{	
+						number : '123',
+						name : 'happy client'
+						},
+						{	
+						number : '15',
+						name : 'award winner'
+						},
+						{	
+						number : '99',
+						name : 'cup of coffee'
+						},
+						{	
+						number : '24',
+						name : 'members'
+						}
+					];
 .statistic-wrap
 	.wrapper
 		.statistic-placeholder
 			each item in statistica
-				.statistic
-					.statistic-number 75
-					.statistic-name=item
+				.col-mobile.col-phablet-1-2.col-desktop-1-5
+					.statistic
+						.statistic__number=item.number
+						.statistic__name=item.name
 

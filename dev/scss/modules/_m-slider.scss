@@ -5,13 +5,10 @@
 }
 
 .slider-nav {
-	cursor: pointer;
 	.slide {
 		outline: none;
 		margin-right: 28px;
-		&:nth-child(last) {
-			margin-left: 0;
-		}
+		cursor: pointer;
 	}
 }
 
@@ -31,6 +28,9 @@
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	margin-bottom: 25px;
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 button.learn-more {

@@ -5,8 +5,8 @@
 @import 'utility/_variables';
 @import 'base/_base';
 @import 'layout/_l-footer';
-@import 'layout/_l-info-block-holder';
-@import 'layout/_l-wrapper';
+@import 'layout/_l-banner';
+@import 'layout/_l-grid';
 @import 'layout/_l-story';
 @import 'layout/_l-team';
 @import 'layout/_l-work';
@@ -21,3 +21,4 @@
 @import 'modules/_m-img-containers';
 @import 'modules/_m-statistic';
 @import 'modules/_m-services';
+@import 'state/_state';

@@ -4,13 +4,13 @@
 	color: #fff;
 	margin-right: 40px;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .fa-bars {
 	color: #fff;
 	cursor: pointer;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .fa-times {
@@ -25,12 +25,14 @@
 	position: relative;
 	z-index: 2;
 	background: none;
+	font-size: 15px;
 }
 
 .fa-users {
 	width: 35px;
 	height: 26px;
 	color: #fff;
+	z-index: 2;
 }
 
 .fa-facebook-f, .fa-twitter, .fa-pinterest-p, .fa-instagram {
@@ -58,7 +60,6 @@
 
 @media(max-width: 768px){
 	.fa-shopping-cart{
-		margin-bottom: 15px;
-		margin-right: 0;
+		margin-right: 15px;
 	}
 }

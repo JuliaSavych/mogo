@@ -1,20 +1,39 @@
 .design-wrap {
-	background-image: url('../img/design-background.jpg');
 	background-color: #333;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 	// opacity: 0.5;
 	padding-top: 110px;
 	position: relative;
 	height: 862px;
-	display: flex;
-	justify-content: center;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-image: url('../img/design-background.jpg');
+			background-repeat: no-repeat;
+			background-position:center;
+			background-size: cover;
+			z-index: 1;
+		}
 }
 
-.design {
-	position: relative;
-	opacity: 1;
-	svg{
-		width: 300px;
-	}
+.design-devices {
+		&__ipad {
+		position: absolute;
+	
+			svg {
+				width: 480px;
+			}
+		}
+		&__iphone {
+		position: absolute;
+		
+		z-index: 3;
+			svg {
+				width: 275px;
+			}
+		}
 }
-
