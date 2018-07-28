@@ -5,9 +5,10 @@
 }
 
 .slider-nav {
+	margin: 0 -15px;
 	.slide {
 		outline: none;
-		margin-right: 28px;
+		margin: 0 15px;
 		cursor: pointer;
 	}
 }
@@ -28,9 +29,6 @@
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	margin-bottom: 25px;
-	&:last-child {
-		margin-right: 0;
-	}
 }
 
 button.learn-more {
@@ -47,14 +45,11 @@ button.learn-more {
 	font-weight: bold;
 	color: #fff;
 	outline: none;
-	&:hover {
-		background: $hover-gradient;
-	}
 }
 
 .learn-more__text {
 		display: none;
-		color: $text;
+		color: $main-bg;
 		font-size: 25px;
 		font-style: italic;
 		line-height: 24px;
@@ -62,7 +57,7 @@ button.learn-more {
 		padding-top: 70px;
 		&.active {
 			display: block;
-			color: $text;
+			color: $main-bg;
 			font-size: 25px;
 			font-style: italic;
 			line-height: 24px;
@@ -92,7 +87,7 @@ button.learn-more {
 		top: 0;
 		width: 0;
 		height: 5px;
-		background: $horizontal-bar;
+		background: $rose-color;
 		opacity: 0;
 		left: 0;
 	}

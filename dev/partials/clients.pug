@@ -1,0 +1,45 @@
+-
+	var client = [
+		{	
+			img : "img/client-1.png",
+			name : 'Matthew Dix',
+			job : 'Graphic Design',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "img/client-2.png",
+			name : 'Nick Karvounis',
+			job : 'Graphic Design',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "img/client-3.png",
+			name : 'Nick Karvounis',
+			job : 'Graphic Design',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "img/client-4.png",
+			name : 'Nick Karvounis',
+			job : 'Graphic Design',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		}];
+.clients-wrap
+	.wrapper
+		.offset
+			.title
+				h3.subheading-italic 
+					|Happy Clients
+				h2.subheading
+					|What people say
+			.clients
+				each item in client
+					.col-desktop-1-2
+						.clients-box
+							.clients-box__img
+								img(src=item.img)
+							.clients-box-info
+								.clients-box-info__name.team__name=item.name
+								.clients-box-info__job.team__job.team__job-line=item.job
+								.clients-box-info__text=item.text
+

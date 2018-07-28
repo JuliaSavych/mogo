@@ -33,19 +33,18 @@ h2, .subheading {
 	color: #333;
 	padding-bottom: 40px;
 	text-align: center;
-	margin-bottom: 45px;
 	&:after {
 		content: '';
 		position: absolute;
 		right: 50%;
 		bottom: 0;
 		transform: translateX(50%);
-		background: $horizontal-bar;
+		background: $rose-color;
 		width: 62px;
 		height: 3px;
 	}
 	&_slider {
-		color: #fff;
+		color: $main-bg;
 		font-size: 70px;
 		padding-bottom: 70px;
 		line-height: 140px;
@@ -79,7 +78,7 @@ h3, .subheading-italic {
 	margin-bottom: 22px;
 	&_slider{
 		font-size: 30px;
-		color: #fff;
+		color: $main-bg;
 		margin-bottom: 42px;
 		padding: 0;
 		@include breakpoint(md){
@@ -88,8 +87,23 @@ h3, .subheading-italic {
 	}
 }
 
+h4.subheading {
+	&_service {
+		color: $title-color;
+		font-family: $base-font-family;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+}
+
+.title {
+	margin-bottom: 45px;
+}
+
 .intro {
-	color: #999999;
+	color: $text;
 	font-family: Roboto;
 	font-size: 15px;
 	font-weight: 400;

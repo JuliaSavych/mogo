@@ -1,9 +1,9 @@
 .work {
-	padding-top: 110px;
+	padding-top: 120px;
 	text-align: center;
 }
 
-.work-img{
+.work-img {
 	display: flex;
 	flex-wrap: wrap;
 	height: 780px;
@@ -12,15 +12,16 @@
 	overflow: hidden;
 }
 
-// .column {
-//     flex: 25%;
-// 	max-width: 25%;
-// }
-
-// @media (max-width: 768px) and (min-width: 320px) {
-// 	.column {
-// 		flex: 50%;
-// 		max-width: 50%;
-
-// 	}
-// }
+figure.work-placeholder {
+	position: relative;
+	overflow: hidden;
+	transition: .3s ease all;
+	img {
+		transform: scale(1);
+	}
+	&:hover {
+		img {
+			transform: scale(1.2);
+		}
+	}
+}

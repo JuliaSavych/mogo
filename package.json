@@ -18,6 +18,7 @@
     "gulp-server-livereload": "^1.9.2"
   },
   "dependencies": {
+    "npm": "^6.2.0",
     "stylelint": "^9.3.0",
     "stylelint-scss": "^3.1.3"
   }

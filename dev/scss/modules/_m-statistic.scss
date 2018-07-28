@@ -6,6 +6,9 @@
 	&>[class*="col-"]{
 		padding: 0;
 	}
+	&:nth-child(1) {
+		border-left: 1px solid rgba(255, 255, 255, 0.3);
+	}
 }
 
 .statistic {
@@ -15,20 +18,40 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-family: $base-font-family;
-	padding: 90px 0;
 	width: 100%;
 	cursor: pointer;
-	&:first-child {
-		border-left: 1px solid rgba(255, 255, 255, 0.3);
-	}
-}
-
-.statistic__number {
-	font-size: 72px;
-	font-weight: 700;
 }
 
 .statistic__name {
 	font-size: 14px;
 	font-weight: 400;
+}
+
+@media (min-width: 320px) {
+	.statistic {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		border-right: 0;
+		padding: 30px 0;
+		&__number {
+			font-size: 36px;
+			font-weight: 700;
+		}
+	}
+	.statistic-placeholder {
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+}
+
+@media (min-width: 768px) {
+	.statistic-placeholder {
+		border: none;
+	}
+	.statistic {
+		border-right: 1px solid rgba(255, 255, 255, 0.3);
+		padding: 90px 0;
+		&__number {
+			font-size: 72px;
+			font-weight: 700;
+		}
+	}
 }

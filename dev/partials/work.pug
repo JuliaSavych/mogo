@@ -1,12 +1,20 @@
 .wrapper
 	.work
-		h3.subheading-italic 
-			|What we do
-		h2.subheading
-			|some of our work
+		.title
+			h3.subheading-italic 
+				|What we do
+			h2.subheading
+				|some of our work
 		.intro
 			|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]
 .work-img
 	-for (var i = 1; i < 8; i++)
 		.img-placeholder.img-placeholder__work
-			img(src="../img/work-"+i+".jpg")
+			figure.work-placeholder
+				img(src="img/work-"+i+".jpg")
+				figurecaption.icon-work
+					.far.fa-image
+					.icon-work__title
+						|creatively designed
+					.icon-work__info
+						|Lorem ipsum dolor sit

@@ -1,9 +1,9 @@
 $(function() {
    $(window).scroll(function () {
-      if ($(this).scrollTop() > 945) {
+      if ($(this).scrollTop() > 50) {
          $('.header').addClass('header-background')
       }
-      if ($(this).scrollTop() < 945) {
+      if ($(this).scrollTop() < 50) {
          $('.header').removeClass('header-background')
       }
    });
@@ -46,7 +46,7 @@ $('.slider-nav').slick({
               { 
                 slidesToShow: 4,
                 slidesToScroll: 4,
-                centerMode: true,
+                centerMode: false,
                 arrows: false
               }
           }
@@ -142,7 +142,10 @@ sliders.forEach(function(sliderabout){
   
 });
 
-$('.work-img').masonry({
+var $work = $('.work-img').masonry({
   itemSelector: '.img-placeholder',
   columnWidth: '.img-placeholder__work'
 });
+$work.imagesLoaded().progress( function() {
+  $work.masonry();
+});  

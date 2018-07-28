@@ -1,8 +1,9 @@
 //In main.less I perfer importing all less files in one for building one css file that I implement into html page
 
-@import '_fonts';
+
 @import 'utility/_mixin';
 @import 'utility/_variables';
+@import '_fonts';
 @import 'base/_base';
 @import 'layout/_l-footer';
 @import 'layout/_l-banner';
@@ -21,4 +22,6 @@
 @import 'modules/_m-img-containers';
 @import 'modules/_m-statistic';
 @import 'modules/_m-services';
+@import 'modules/_m-article';
+@import 'modules/_m-clients';
 @import 'state/_state';

@@ -14,10 +14,10 @@
 		top: 65px;
 		z-index: 1;
 		left: -100%;
-		background: #f38181;
+		background: $rose-color;
 		width: 100%;
 		transform: translateX(-100%);
-		transition: 1s ease all;
+		transition: background .3s ease;
 		height: auto;
 		li {
 			display: inline-block;
@@ -29,7 +29,7 @@
 				text-align: center;
 				display: block;
 				text-transform: uppercase;
-				color: #fff;
+				color: $main-bg;
 				padding: 10px 0;
 				font-size: 20px;
 			}
@@ -73,26 +73,27 @@
 				width: auto;
 				a{
 					text-transform: uppercase;
-					color: #fff;
+					color: $main-bg;
 					position: relative;
 					width: 100%;
 					font-size: 14px;
+					transition: .3s ease color;
 					&:after{
 						content: '';
 						position: absolute;
 						bottom: 0;
 						left: 0;
 						right: 0;
-						background: #fce38a;
+						background: $yellow-color;
 						height: 4px;
 						opacity: 0;
+						transition: .3s ease opacity;
 					}
 					&:hover{
-						color: #fce38a;
-						transition: 1s ease all;
+						color: $yellow-color;
+						transition: .3s ease color;
 						&:after{
 							opacity: 1;
-							transition: 1s ease all;
 						}
 					}
 				}
@@ -115,7 +116,7 @@
 }
 
 .search-box {
-	transition: .5s ease all;
+	transition: .3s ease all;
 	position: relative;
 	width: 15px;
 	overflow: hidden;
@@ -131,6 +132,10 @@
 		left: 0;
 		bottom: 0;
 		cursor: pointer;
+			&:hover{
+				color: $yellow-color;
+				transition: .3s ease color;
+			}
 	}
 	form {
     	white-space: nowrap;
@@ -138,6 +143,7 @@
     		display: inline-block;
     	}
     	input{
+    		background: none;
     		border-radius: 5px;
     		padding: 0 10px;
     		width: 150px;
@@ -151,7 +157,7 @@
   	&.active {
 		width: 200px;
 	    border-radius: 15px;
-	    border: 1px solid #f8f8f8;
+	    border: 1px solid $grey-bg;
 	    padding: 5px;
 	    animation-name: change-color;
 		animation-duration: 5s;

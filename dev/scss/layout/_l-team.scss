@@ -1,6 +1,4 @@
-.team-wrap{
-	padding-top: 110px;
-	padding-bottom: 100px;
+.team-wrap {
 	text-align: center;
 }
 
@@ -22,6 +20,21 @@
 		font-style: italic;
 		font-family: "Roboto";
 		color: rgb(153,153,153);
+	}
+}
+
+.team__job-line {
+	padding-bottom: 17px;
+	position: relative;
+	margin-bottom: 25px;
+	&:after {
+		content: '';
+		background: $rose-color;
+		height: 3px;
+		width: 60px;
+		position: absolute;
+		top: 100%;
+		left: 0;
 	}
 }
 

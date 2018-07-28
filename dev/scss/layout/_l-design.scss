@@ -1,10 +1,6 @@
 .design-wrap {
-	background-color: #333;
-	// background-attachment: fixed;
-	// opacity: 0.5;
 	padding-top: 110px;
 	position: relative;
-	height: 862px;
 		&:before {
 			content: '';
 			position: absolute;
@@ -17,23 +13,53 @@
 			background-position:center;
 			background-size: cover;
 			z-index: 1;
+			opacity: 0.5;
 		}
 }
 
-.design-devices {
-		&__ipad {
+.devices {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.device-ipad {
+	overflow: hidden;
+	position: relative;
+	width: 477px;
+	height: 560px;
+	img {
+		width: 477px;
+		height: 713px;
+	}
+	&__content {
 		position: absolute;
-	
-			svg {
-				width: 480px;
-			}
-		}
-		&__iphone {
 		position: absolute;
-		
-		z-index: 3;
-			svg {
-				width: 275px;
-			}
-		}
+	    top: 121px;
+	    left: 62px;
+	    right: 57px;
+	    bottom: 0;
+		background-image: url("../img/ipad__content.png");
+		background-attachment: fixed;
+		background-position: center;
+	}
+}
+
+.device-iphone {
+	position: relative;
+	width: 274px;
+    height: 476px;
+	margin-left: -155px;
+	margin-bottom: -90px;
+	z-index: 3;
+	&__content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url("../img/iphone__content.png");
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 }

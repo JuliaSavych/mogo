@@ -4,11 +4,39 @@
 
 .logos {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 52px 0;
 	cursor: pointer;
+	opacity: 0.8;
 	img {
 		max-width: 100%;
+	}
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (min-width: 320px) {
+	.logos {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 480px) {
+	.logos {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 768px) {
+	.logos {
+		display: flex;
+		justify-content: space-between;
 	}
 }

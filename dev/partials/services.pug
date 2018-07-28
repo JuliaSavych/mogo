@@ -1,43 +1,46 @@
 -
 	var service = [
 		{	
-			img : "/img/slider-about.png",
+			img : "img/slider-about.png",
 			title : 'Photography',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
 		},
 		{	
-			img : "/img/slider-about.png",
+			img : "img/slider-about.png",
 			title : 'Web Design',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
 		},
 		{	
-			img : "/img/slider-about.png",
+			img : "img/slider-about.png",
 			title : 'Creativity',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
 		},
 		{	
-			img : "/img/slider-about.png",
+			img : "img/slider-about.png",
 			title : 'seo',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
 		},
 		{	
-			img : "/img/slider-about.png",
+			img : "img/slider-about.png",
 			title : 'Css/Html',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
 		},
 		{	
-			img : "/img/slider-about.png",
+			img : "img/slider-about.png",
 			title : 'digital',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
 		}];
 .wrapper
-	.services-wrap
-		h3.subheading_italic We work with
-		h2.subheading Amazing Services
+	.services-wrap.offset
+		.title
+			h3.subheading_italic We work with
+			h2.subheading Amazing Services
 		.services
 			each item in service
 				.col-mobile.col-phablet-1-2.col-desktop-1-3
 					.service-box
-						img(src=item.img)
-						.service-box__title=item.title
-						.service-box__text=item.text
+						.service-box__img
+							img(src=item.img)
+						.service-box__intro
+							h4.subheading_service=item.title
+							.service-box__text=item.text
