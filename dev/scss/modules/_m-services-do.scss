@@ -1,55 +1,25 @@
 .services-do {
-	padding: 115px 0;
-	&__subheading {
-		text-align: center;
-	}
-	&__menu {
-		ul {
-			li {
-				border: 1px solid $grey-bg;
-				background-color: $main-bg;
-				a {
-					display: block;
-					color: #333;
-					font-size: 14px;
-					text-transform: uppercase;
-					font-weight: 400;
-					padding: 26px 0;
-					padding-left: 62px;
-				}
-			}
-		}
+	display: flex;
+	justify-content: space-between;
+	&__img {
+		height: 280px;
 	}
 }
 
-.services-do__menu-opener {
-	position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    cursor: pointer;
-		&:before{
-			content: '';
-			position: absolute;
-			width: 10px;
-			height: 10px;
-			box-shadow: inset 1px 1px 0 0 #8c8c8c;
-			transform: rotate(-135deg);
-			right: 22px;
-			top: 24px;
-			transition: .5s ease all;
-		}
-		&.active{
-			&:before{
-			content: '';
-			position: absolute;
-			width: 10px;
-			height: 10px;
-			box-shadow: inset 1px 1px 0 0 #8c8c8c;
-			transform: rotate(45deg);
-			right: 22px;
-			top: 24px;
-			}
-		}
+.accordion {
+	&__title {
+		font-family: $base-font-family;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $title-color;
+		border: 1px solid $light-grey;
+		height: 60px;
+		padding: 25px 60px;
+	}
+	&__body {
+		// opacity: 0;
+		height: 0;
+		transition: .3s ease all;
+	}
 }

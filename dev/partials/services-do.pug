@@ -1,19 +1,25 @@
 .wrapper
-	.services-do
-		.services-do__subheading
+	.services-do-wrap.offset
+		.title
 			h3.subheading-italic
 				|Service
 			h2.subheading 
 				|what we do
-			.intro
-				|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-		.services-do__img
-			img(src='img/services-do.jpg')
-		.services-do__menu
-			ul
-				li: a(href="#") photography
-					//- span 
-					//- 	|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				li: a(href="#") creativity
-				li: a(href="#") creativity
-				.services-do__menu-opener
+		.intro
+			|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		.services-do
+			.services-do__img
+				img(src='img/services-do.jpg')
+			.services-do__menu
+				.accordion
+					.accordion__title photography
+					.accordion__body
+						|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				.accordion
+					.accordion__title creativity
+					.accordion__body
+						|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				.accordion
+					.accordion__title web design
+					.accordion__body
+						|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

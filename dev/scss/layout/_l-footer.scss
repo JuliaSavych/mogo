@@ -55,6 +55,39 @@
 			background: $light-grey;
 		}
 	}
+	&__social-networks {
+		font-family: "Roboto - Light Italic";
+		font-size: 15px;
+		font-weight: 400;
+		color: $text;
+		padding: 18px 0;
+		&>* {
+			display: inline-block;
+		}
+	}
+	&__form {
+		input {
+			border: 1px solid #e7e7e7;
+			padding: 10px;
+			color: $text;
+			font-family: "Roboto - Light Italic";
+			font-size: 15px;
+			font-weight: 400;
+			height: 40px;
+		}
+		button {
+			background: $bg-color-gren;
+			padding: 10px 34px;
+			text-transform: uppercase;
+			color: $main-bg;
+			border: none;
+			font-family: $base-font-family;
+			font-weight: 700;
+			height: 40px;
+			margin-left: -5px;
+			cursor: pointer;
+		}
+	}
 }
 
 .blogs {

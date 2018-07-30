@@ -17,3 +17,88 @@ article.blog-article {
 	line-height: 24px;
 	color: $text;
 }
+
+.articles {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+article.article {
+	&>*{
+		margin-bottom: 20px;
+	}
+	figure {
+		position: relative;
+		figurecaption {
+			padding: 15px 14px;
+			position: absolute;
+			bottom: 10px;
+			left: -10px;
+			width: 60px;
+			background-color: $bg-color-gren;
+			color: $main-bg;
+			font-family: Montserrat;
+			font-size: 30px;
+			font-weight: 700;
+			text-transform: uppercase;
+			span {
+				display: block;
+				font-family: "Roboto Light";
+				font-weight: 300;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.article__title {
+	font-family: $base-font-family;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	color: $title-color;
+}
+
+.article__info {
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: $text;
+	padding-bottom: 20px;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: $light-grey;
+	}
+}
+
+.article__view {
+	display: inline-block;
+	margin-right: 18px;
+	span {
+		padding-left: 7px;
+		font-family: "Roboto - Light Italic";
+		font-size: 15px;
+		font-weight: 400;
+		color: $text;
+	}
+}
+
+.article__comment {
+	display: inline-block;
+	span {
+		padding-left: 7px;
+		font-family: "Roboto - Light Italic";
+		font-size: 15px;
+		font-weight: 400;
+		color: $text;
+	}
+}

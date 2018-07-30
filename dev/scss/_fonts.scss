@@ -47,20 +47,36 @@
 	font-size: 20px;
 }
 
-.fa-facebook-f, .fa-twitter, .fa-pinterest-p, .fa-instagram {
-	width: 57px;
-	height: 57px;
-	color: $rose-color;
-	background: $yellow-color;
-	padding-top: 17px;
-	font-size: 21px;
-	cursor: pointer;
-	border-right: 1px solid $rose-color;
-	transition: .3s ease all;
-	&:hover{
-		color: $yellow-color;
-		background: $rose-color;
+.icon-team {
+	.fa-facebook-f, .fa-twitter, .fa-pinterest-p, .fa-instagram {
+		color: $rose-color;
+		background: $yellow-color;
+		padding: 17px;
+		font-size: 21px;
+		cursor: pointer;
+		border-right: 1px solid $rose-color;
 		transition: .3s ease all;
+		&:hover{
+			color: $yellow-color;
+			background: $rose-color;
+			transition: .3s ease all;
+		}
+	}
+}
+
+.gren-icons {
+	&>* {
+		font-size: 15px;
+		color: $bg-color-gren;
+		background: none;
+		border: none;
+		padding: 0 9px;
+		cursor: pointer;
+		padding-top: 0;
+		&:hover{
+			color: $bg-color-gren;
+			background: none;
+		}
 	}
 }
 
@@ -82,4 +98,10 @@
 	color: $main-bg;
 	font-size: 20px;
 	margin-bottom: 20px;
+}
+
+.fa-eye, .fa-comment-dots {
+	font-size: 15px;
+	color: $bg-color-gren;
+	cursor: pointer;
 }

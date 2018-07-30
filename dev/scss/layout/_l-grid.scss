@@ -19,6 +19,7 @@
 		flex-basis: 100%;
 		max-width: 100%;
 		justify-content: center;
+		flex-direction: column;
 	}
 }
 
@@ -29,6 +30,7 @@
 		flex-basis: 50%;
 		max-width: 50%;
 		justify-content: center;
+		flex-direction: column;
 	}
 }
 
@@ -45,6 +47,7 @@
 		display: flex;
 		flex-basis: 33.33%;
 		max-width: 33.33%;
+		justify-content: space-between;
 	}
 }
 
