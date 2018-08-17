@@ -1,6 +1,5 @@
 article.blog-article {
 	display: flex;
-	justify-content: space-between;
 	margin-bottom: 30px;
 	&:last-child {
 		margin-bottom: 0;
@@ -25,12 +24,21 @@ article.blog-article {
 	flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+	.articles {
+		justify-content: center;
+	}
+}
+
 article.article {
 	&>*{
 		margin-bottom: 20px;
 	}
 	figure {
 		position: relative;
+		img {
+			max-width: 100%;
+		}
 		figurecaption {
 			padding: 15px 14px;
 			position: absolute;

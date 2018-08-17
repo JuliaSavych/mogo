@@ -24,17 +24,15 @@
 }
 
 .device-ipad {
-	overflow: hidden;
 	position: relative;
 	width: 477px;
 	height: 560px;
-	img {
+	&>img {
 		width: 477px;
 		height: 713px;
 		min-width: 100%;
 	}
 	&__content {
-		position: absolute;
 		position: absolute;
 	    top: 121px;
 	    left: 62px;
@@ -44,28 +42,9 @@
 		background-attachment: fixed;
 		background-position: center;
 	}
-}
-
-.device-iphone {
-	position: relative;
-	width: 274px;
-    height: 476px;
-	margin-left: -155px;
-	margin-bottom: -90px;
-	z-index: 3;
-	img {
-		min-width: 100%;
-	}
-	&__content {
+	.device-iphone {
 		position: absolute;
-		top: 55px;
-		left: 42px;
 		right: 0;
-		bottom: 0;
-		background-image: url("../img/iphone__content.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		width: 201px;
-    	height: 330px;
+    	bottom: -70px;
 	}
 }

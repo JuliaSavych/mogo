@@ -19,7 +19,7 @@
 .footer-wrap
 	.wrapper
 		.footer.row
-			.col-mobile.col-phablet-1-2.col-footer-2-5
+			.col-desktop-2-5
 				.about
 					.about__logo MoGo
 					.about__info Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -43,7 +43,7 @@
 								required
 								email="email")
 							button.button(type="submit") Subscribe
-			.col-mobile.col-phablet-1-2.col-desktop-1-3
+			.col-desktop-3-5.col-footer-1-2
 				.blogs
 					.footer__title BLOGS
 					each item in blog
@@ -53,11 +53,10 @@
 								.article__intro
 									.article__intro-title.team__name=item.title
 									.article__intro-date=item.date
-			.col-mobile.col-phablet-1-2.col-footer-1-4
 				.instagram
 					.footer__title INSTAGRAM
-					script(src="https://instawidget.net/js/instawidget.js?u=744e1a96acfa15355bbedc53f02f2a64ae1ed88e5fff8771f81b114895d99d5a&width=270px")
-					a(href="https://instawidget.net/v/user/ladanivskyy" id="link-744e1a96acfa15355bbedc53f02f2a64ae1ed88e5fff8771f81b114895d99d5a" @ladanivskyy)
+					script(src="https://instawidget.net/js/instawidget.js?u=923b4380f8b6aea17d39ccf59b59bd32805a025b6e1ff5f8c6dd32edcd16df31&width=200px")
+					a(href="https://instawidget.net/v/user/ladanivskyy" id="link-923b4380f8b6aea17d39ccf59b59bd32805a025b6e1ff5f8c6dd32edcd16df31" @ladanivskyy)
 					a(href="#").view-more
 						|View more photos
 		.copyrights
@@ -65,3 +64,5 @@
 			span
 				a(href='#') 
 					|Laaqiq
+
+					<!-- InstaWidget -->

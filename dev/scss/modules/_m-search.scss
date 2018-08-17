@@ -1,0 +1,65 @@
+.search-box {
+	transition: .3s ease all;
+	position: relative;
+	width: 15px;
+	overflow: hidden;
+	transition: .5s ease all;
+	button{
+		background: none;
+		border: none;
+		cursor: pointer;
+  	}
+	&>button {
+		position: absolute;
+		right: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		cursor: pointer;
+			&:hover{
+				color: $yellow-color;
+				transition: .3s ease color;
+			}
+	}
+	form {
+    	white-space: nowrap;
+    	&>*{
+    		display: inline-block;
+    	}
+    	input{
+    		background: none;
+    		border-radius: 5px;
+    		padding: 0 10px;
+    		width: 150px;
+    		border: none;
+    		outline: none;
+    	}
+    	&>button{
+    		opacity: 0;
+		}
+  	}
+  	&.active {
+		width: 200px;
+	    border-radius: 15px;
+	    border: 1px solid $grey-bg;
+	    padding: 5px;
+	    animation-name: change-color;
+		animation-duration: 5s;
+		transition: .5s ease all;
+		&>button{
+			display: none;
+		}
+		form{
+			&>button{
+				opacity: 1;
+				border-radius: 50%;
+				width: 30px;
+				height: 17px;
+				outline: none;
+			}
+		}
+		@media (min-width: 950px) {
+			width: 200px;
+		}
+  	}
+}

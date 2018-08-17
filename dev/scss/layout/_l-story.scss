@@ -8,3 +8,9 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+	.story-img {
+		justify-content: center;
+	}
+}

@@ -16,6 +16,12 @@
 	}
 }
 
+@media (max-width: 400px) {
+	.banner {
+		padding-top: 140px;
+	}
+}
+
 .header {
 	position: fixed;
 	top: 0;
@@ -29,6 +35,11 @@
 		font-size: 30px;
 		font-weight: bold;
 		cursor: pointer;
+		margin-right: 0; 
+	}
+	&>.wrapper {
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
@@ -36,7 +47,9 @@
 	background-color: $rose-color;
 }
 
-.container {
-	display: flex;
-	justify-content: space-between;
+@media (max-width: 400px) {
+	.header__logo {
+		font-size: 20px;
+		margin-right: 20px;
+	}
 }

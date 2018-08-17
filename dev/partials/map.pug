@@ -1,13 +1,13 @@
-.map-wrap
+.map-wrap.active
 	#map
 		script.
 			function initMap() {
-				var place = {lat: 48.922633, lng: 24.71111700000006};
+				var place = {lat: 43.653226, lng: -79.38318429999998};
 				var map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: place});
 				var marker = new google.maps.Marker({position: place, map: map});
 			}
-	//- .map-holder
-	//- 	.icon-map
-	//- 		.fas.fa-map-marker-alt
-	//- 	button.open-map
-	//- 		|Open map
+	.map-holder
+		.icon-map
+			.fas.fa-map-marker-alt
+		button.open-map
+			|Open map

@@ -1,0 +1,27 @@
+-
+	var content = [
+					{
+						img : "img/slider-about.png",
+						text : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+						author : 'Jon Doe'
+					},
+					{
+						img : "img/slider-about.png",
+						text : 'Ut enim ad minim veniam, quis nostrud exercitation.',
+						author: 'Jon Earle'
+					},
+					{
+						img : "img/slider-about.png",
+						text : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+						author : 'Joshua Doe'
+					}
+				];
+.slider-wrap
+	.wrapper
+		.sliderabout
+			each item in content
+				.slideabout
+					.sliderabout__img
+						img(src=item.img)
+					.sliderabout__text=item.text
+						.sliderabout__author=item.author
