@@ -18,9 +18,24 @@
 		#map {
 			opacity: 0;
 		}
+		.map-holder {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 30%;
+			left: 45%;
+			opacity: 1;
+			z-index: 4;
+		}
 	}
 	#map {
 		opacity: 1;
+	}
+	.map-holder {
+		opacity: 0;
 	}
 }
 
@@ -31,19 +46,6 @@
 	align-items: center;
 	position: relative;
 	opacity: 0;
-}
-
-.map-holder {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 30%;
-	left: 45%;
-	opacity: 1;
-	z-index: 4;
 }
 
 .icon-map {
