@@ -124,12 +124,10 @@ function setActiveNextPrevClass(sliderabout){
   }else{
     s[s.length-1].classList.add('prevSlide')
   }
-  sliderabout.style.height = s[0].clientHeight+'px';
+  sliderabout.style.height = s[index].clientHeight+'px';
 }
 sliders.forEach(function(sliderabout){
-  console.dir(sliderabout)
   var s = sliderabout.querySelectorAll('.slideabout');
-  console.log(s)
   sliderabout.currentSlideIndex = 0;
   setActiveNextPrevClass(sliderabout);
 
@@ -151,11 +149,14 @@ sliders.forEach(function(sliderabout){
   prevBtn.classList.add('sliderabout__btn');
   prevBtn.classList.add('sliderabout__btn_prev');
   prevBtn.onclick = function(){
-  if(s[sliderabout.currentSlideIndex-1]){
+    console.log(s[sliderabout.currentSlideIndex-1] == false)
+  if(sliderabout.currentSlideIndex>0){
       sliderabout.currentSlideIndex--
     }else{
-      sliderabout.currentSlideIndex = sliderabout.length-1;
+      console.dir(sliderabout)
+      sliderabout.currentSlideIndex = sliderabout.childElementCount-3;
     }
+    console.log(sliderabout.currentSlideIndex)
     setActiveNextPrevClass(sliderabout)
   }
   sliderabout.appendChild(prevBtn) 

@@ -4,8 +4,8 @@
 
 .team {
 	display: flex;
-	justify-content: center;
-	flex-direction: row;
+	justify-content: space-between;
+	// flex-direction: row;
 	flex-wrap: wrap;
 	&__name {
 		font-size: 14px;
@@ -45,19 +45,6 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
 	.team {
-		display: flex;
-		flex-basis: 45%;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-}
-
-@media (min-width: 768px) {
-	.team {
-		display: flex;
 		justify-content: center;
-		flex-basis: 33.33%;
-		flex-direction: row;
-		flex-wrap: nowrap;
 	}
 }

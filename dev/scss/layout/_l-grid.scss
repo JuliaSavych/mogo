@@ -24,7 +24,6 @@ $offset: 120px;
 		flex-basis: 100%;
 		max-width: 100%;
 		justify-content: center;
-		flex-direction: column;
 	}
 	.offset {
 		padding: $offset/3*1 0;
@@ -37,8 +36,6 @@ $offset: 120px;
 		display: flex;
 		flex-basis: 50%;
 		max-width: 50%;
-		justify-content: center;
-		flex-direction: column;
 	}
 	.offset {
 		padding: $offset/2*1 0;
@@ -47,7 +44,6 @@ $offset: 120px;
 		display: flex;
 		flex-basis: 100%;
 		max-width: 100%;
-		justify-content: space-between;
 	}
 }
 
@@ -59,7 +55,6 @@ $offset: 120px;
 	.col-desktop-1-3 {
 		flex-basis: 33.33%;
 		max-width: 33.33%;
-		justify-content: space-between;
 	}
 	.col-desktop-1-5 {
 		flex-basis: 20%;
@@ -73,7 +68,6 @@ $offset: 120px;
 		display: flex;
 		flex-basis: 60%;
 		max-width: 60%;
-		justify-content: space-between;
 	}
 }
 
@@ -82,7 +76,6 @@ $offset: 120px;
 		display: flex;
 		flex-basis: 16.66%;
 		max-width: 16.66%;
-		justify-content: center;
 	}
 }
 

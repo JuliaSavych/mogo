@@ -8,14 +8,13 @@
 
 .sliderabout {
 	position: relative;
-	display: flex;
- 	justify-content: center;
  	width: 100%;
  	min-height: 100%;
+	overflow: hidden;
 	&__img {
-	border: 1px solid $bg-color-gren;
-	margin-right: 60px;
-	cursor: pointer;
+		border: 1px solid $bg-color-gren;
+		margin-right: 60px;
+		cursor: pointer;
 		img {
 			padding:44px;
 		}
@@ -52,14 +51,18 @@
 .slideabout {
 	position: absolute;
 	top: 0;
-	left: 0;
-	right: 0;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	padding: 70px 0;
-	margin: 0 72px;
-	transition: .5s ease all;
+	padding: 70px 72px;
+	// transition: .5s ease all;
+	left: -100%;
+	width: 100%;
+	&.active {
+		left: 0;
+	}
+	&.nextSlide {
+		left: 100%;
+	}
 }
 
 .sliderabout__btn {
