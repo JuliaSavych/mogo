@@ -1,12 +1,41 @@
+-
+	var slideInfo = [
+		{	
+			img : "img/slider-icon.png",
+			autour : 'Joshua Earle',
+			quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+		},
+		{	
+			img : "img/slider-icon.png",
+			autour : 'Joshua Earle',
+			quote: 'Lorem ipsum dolor sit amet, vim cu facer mucius. No vidisse nonumes duo, admodum suscipit an quo. Ex usu expetendis definitiones, movet insolens vix ne, munere intellegam ad eum. Liber simul no duo, ex vim viris affert molestiae.'
+		},
+		{	
+			img : "img/slider-icon.png",
+			autour : 'Joshua Earle',
+			quote: 'Nusquam corpora scribentur mei ex, vim posidonium appellantur et, magna euripidis duo id. Ut vim mediocrem consetetur. Ea feugiat molestie hendrerit vix. Nam ea sint vocent concludaturque. Nusquam sensibus moderatius has at, iusto everti quaestio ex vim. Vel sale principes ne, te nam scaevola accusamus contentiones.'
+		},
+		{	
+			img : "img/slider-icon.png",
+			autour : 'Joshua Earle',
+			quote: 'Ei usu elitr consul abhorreant, probo commune id per. Ea vis iriure singulis pertinax. Phaedrum perpetua gubergren ad est, mea at recusabo salutandi, an ipsum diceret mediocrem mei. Reformidans consequuntur ex mei, quo ne fabellas incorrupte. Cum homero graece definitionem an. Mei corpora omnesque constituam no, sit et integre suavitate dissentiet.'
+		},
+		{	
+			img : "img/slider-icon.png",
+			autour : 'Joshua Earle',
+			quote: 'Ea has consul habemus, at vidisse forensibus vim, fierent pertinax perpetua an sed. Et legendos imperdiet duo, sea ne utroque definitionem, est at animal admodum. Ferri detracto quaestio usu ne, duo alterum perfecto cu, agam putent disputationi nec ne. Ut mazim consul disputationi nec, sumo dicat suscipiantur an usu. Mel corrumpit definiebas ea.'
+		},
+		{	
+			img : "img/slider-icon.png",
+			autour : 'Joshua Earle',
+			quote: 'Eos cu iriure pertinacia scribentur, ex etiam omittantur duo. Usu et iriure sapientem cotidieque, ei libris sensibus deterruisset est, eu vix essent volutpat. Ei iuvaret petentium prodesset quo. An mel liber nihil omnium, et magna postea virtute quo. Ne inani verterem nec.'
+		}];
 .slider-wrap__white
 	.wrapper
 		.sliderabout
-			-for(var i = 1; i < 5; i++)
+			-for(var i = 1; i < slideInfo.length; i++)
 				.slideabout
 					.sliderabout__icon
-						img(src="img/slider-icon.png")
-					.sliderabout__text 
-						|“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-						|tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-						.sliderabout__author
-							|Joshua Earle
+						img(src=slideInfo[i].img)
+					.sliderabout__text=slideInfo[i].quote
+						.sliderabout__author=slideInfo[i].autour
